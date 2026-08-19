@@ -24,3 +24,11 @@ db.connect((err) => {
         console.log("Database connected successfully!");
     }
 });
+
+app.get('/', (req, res) => {
+    res.send("Backend is working!");
+});
+
+app.listen(5001, () => {
+    console.log("Server running on port 5001");
+});
